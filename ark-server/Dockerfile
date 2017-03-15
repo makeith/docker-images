@@ -22,7 +22,7 @@ RUN groupadd -g $PGID ark && \
     useradd -u $PUID -g $PGID ark
 
 # Cleanup
-rm -r /install-media
+RUN rm -r /install-media
 
 #Expose the port
 EXPOSE 34777/udp 27015/udp
